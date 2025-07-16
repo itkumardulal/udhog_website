@@ -65,8 +65,8 @@ function Video() {
   return (
     <section className="relative w-full h-[400px] sm:h-screen overflow-hidden text-white text-center">
       {/* Cropped YouTube Iframe */}
-      <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
-        <div className="w-full h-full scale-[2] sm:scale-100 origin-center">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full scale-[2] sm:scale-[1.25] origin-center">
           <div
             ref={iframeContainerRef}
             className="w-full h-full"
@@ -78,8 +78,8 @@ function Video() {
       {/* Overlay for better text contrast */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10 pointer-events-none" />
 
-      {/* Text Content */}
-      <div className="absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 space-y-4 w-full">
+      {/* Text Content - hidden on mobile */}
+      <div className="hidden sm:block absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 space-y-4 w-full">
         <h1 className="font-light text-[clamp(1.5rem,5vw,3.5rem)] leading-tight">
           {t("videoTitle")}
         </h1>
