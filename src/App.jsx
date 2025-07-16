@@ -18,6 +18,7 @@ import WhyMembership from "./component/Membership";
 
 
 
+
 const AppRoutes = () => {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
