@@ -1,17 +1,18 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import translations from '../locales/transalation';
-
+// @refresh reset
+import React, { createContext, useContext, useState, useEffect } from "react";
+import translations from "../locales/transalation";
 
 const TranslationContext = createContext();
 
 export const TranslationProvider = ({ children }) => {
-  const storedLanguage = localStorage.getItem('appLanguage');
-  const [language, setLanguage] = useState(storedLanguage || 'en');
+  // Default to "np" (Nepali) if no stored language
+  const storedLanguage = localStorage.getItem("appLanguage");
+  const [language, setLanguage] = useState(storedLanguage || "np");
 
-  const t = (key) => translations[language][key] || key;
+  const t = (key) => translations[language]?.[key] || key;
 
   useEffect(() => {
-    localStorage.setItem('appLanguage', language);
+    localStorage.setItem("appLanguage", language);
   }, [language]);
 
   return (
