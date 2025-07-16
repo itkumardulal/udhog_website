@@ -12,7 +12,7 @@ import img9 from "../../assets/img9.JPG";
 import img10 from "../../assets/img10.jpg";
 import chairperson from "../../assets/chaiperson.JPG";
 import Navbar from "../Navbar";
-import Footer from "../footer";
+import Footer from "../Footers";
 import { useTranslation } from "../../context/TranslationContext";
 
 function NewHistory() {

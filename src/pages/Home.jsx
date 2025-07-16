@@ -1,6 +1,6 @@
-
 import Contact from "../component/Contact";
-import Footer from "../component/footer";
+import Footer from "../component/Footer";
+
 // import ImageSlider from "../component/ImageSlider";
 import Message from "../component/Message";
 import Navbar from "../component/Navbar";

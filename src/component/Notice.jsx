@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import Footer from "./footer";
+import Footer from "./Footers";
 import { useTranslation } from "../context/TranslationContext";
 import API from "../http";
 import { toast, ToastContainer } from "react-toastify";

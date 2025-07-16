@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "../context/TranslationContext";
-import Footer from "./footer";
+import Footer from "./Footers";
 import Navbar from "./Navbar";
 import API from "../http";
 import { useLocation } from "react-router-dom";
@@ -81,7 +81,7 @@ const Company = () => {
                       <th className="p-5 text-left text-sm font-semibold text-gray-900 min-w-[150px]">
                         {headers.nameAndEmail}
                       </th>
-                       <th className="p-5 text-left text-sm font-semibold text-gray-900">
+                      <th className="p-5 text-left text-sm font-semibold text-gray-900">
                         {headers.address}
                       </th>
                       <th className="p-5 text-left text-sm font-semibold text-gray-900">
@@ -102,7 +102,7 @@ const Company = () => {
                       <th className="p-5 text-left text-sm font-semibold text-gray-900">
                         {headers.pan}
                       </th>
-                     
+
                       <th className="p-5 text-left text-sm font-semibold text-gray-900">
                         {headers.employees}
                       </th>

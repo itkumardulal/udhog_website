@@ -1,4 +1,4 @@
-import Footer from "../component/footer";
+import Footer from "../component/Footers";
 import Navbar from "../component/Navbar";
 import Services from "../component/Services";
 
