@@ -12,12 +12,9 @@ import NewHistory from "./component/history/NewHistory";
 import ServicesPage from "./pages/ServicePage";
 import Company from "./component/Company";
 import ScrollToTop from "./component/ScrollTop";
-import Branch from "./component/branches/Branches";
+// import Branch from "./component/branches/Branches";
 import Loader from "./component/loader/Loader";
 import WhyMembership from "./component/Membership";
-
-
-
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -26,7 +23,6 @@ const AppRoutes = () => {
   const excludedRoutes = ["/", "/contact", "/about"];
 
   useEffect(() => {
-
     if (excludedRoutes.includes(location.pathname)) return;
 
     setLoading(true);
@@ -52,13 +48,12 @@ const AppRoutes = () => {
         <Route path="/message" element={<DisplayMessage />} />
         <Route path="/view-message" element={<MessageView />} />
         <Route path="/table" element={<Company />} />
-        <Route path="/choose-us" element={<WhyMembership/>} />
+        <Route path="/choose-us" element={<WhyMembership />} />
         {/* <Route path="/branch/:branchName" element={<Branch />} /> */}
       </Routes>
     </>
   );
 };
-
 
 function App() {
   return (
