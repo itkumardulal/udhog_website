@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
-import Footer from "../Footers";
+
 import { useTranslation } from "../../context/TranslationContext";
 import img1 from "../../assets/img1.JPG";
 import img2 from "../../assets/img2.jpg";
@@ -14,6 +14,7 @@ import img8 from "../../assets/img8.JPG";
 import img9 from "../../assets/img9.JPG";
 import img10 from "../../assets/img10.jpg";
 import chairperson from "../../assets/chaiperson.JPG";
+import Footer from "../Footer";
 
 function DisplayMessage() {
   const { t } = useTranslation();

@@ -2,8 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import BranchesLayout from "./BranchesLayout";
 import Navbar from "../Navbar";
-import Footer from "../Footers";
+
 import { branchesData } from "./branchData";
+import Footer from "../Footer";
 
 const Branch = () => {
   const { branchName } = useParams();

@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "../context/TranslationContext";
-import Footer from "./Footers";
+
 import Navbar from "./Navbar";
 import API from "../http";
 import { useLocation } from "react-router-dom";
+import Footer from "./Footer";
 
 const Company = () => {
   const { t } = useTranslation();

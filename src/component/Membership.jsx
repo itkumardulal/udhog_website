@@ -1,5 +1,6 @@
 import { useTranslation } from "../context/TranslationContext";
-import Footer from "./Footers";
+import Footer from "./Footer";
+
 import Navbar from "./Navbar";
 
 const WhyMembership = () => {

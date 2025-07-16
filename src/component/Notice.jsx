@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footers";
+
 import { useTranslation } from "../context/TranslationContext";
 import API from "../http";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./Footer";
 
 function Notice() {
   const [notices, setNotices] = useState([]);

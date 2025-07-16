@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import Footer from "./Footers";
+
 import image from "../assets/img.jpg";
 import { useTranslation } from "../context/TranslationContext";
 import API from "../http";
+import Footer from "./Footer";
 
 function News() {
   const [newsList, setNewsList] = useState([]);

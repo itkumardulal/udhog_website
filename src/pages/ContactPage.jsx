@@ -1,5 +1,6 @@
 import Contact from "../component/Contact";
-import Footer from "../component/Footers";
+import Footer from "../component/Footer";
+
 import Navbar from "../component/Navbar";
 
 function ContactPage() {

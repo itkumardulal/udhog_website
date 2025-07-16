@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
-import Footer from "./Footers";
+import Footer from "./Footer";
+
 
 function DisplayMessage() {
   const { state } = useLocation();
