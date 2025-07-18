@@ -104,7 +104,7 @@ function Notice() {
                           notice.pdfName || "notice.pdf"
                         );
                       }}
-                      className="hover:text-blue-600"
+                      className="hover:text-blue-600 hover:cursor-pointer"
                       title={t("download")}
                     >
                       <svg

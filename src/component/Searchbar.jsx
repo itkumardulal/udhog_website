@@ -34,7 +34,7 @@ function SearchBar() {
 
           <button
             type="submit"
-            className="hidden lg:block absolute top-1.5 right-1.5 h-13 px-8 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition duration-200 text-lg font-medium"
+            className="hidden lg:block absolute top-1.5 right-1.5 h-13 px-8 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition duration-200 text-lg font-medium hover:cursor-pointer"
           >
             {t('searchCompany')}
           </button>

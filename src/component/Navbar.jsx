@@ -61,7 +61,7 @@ function Navbar() {
                 item.dropdown ? (
                   <div key={item.label} className="relative group">
                     <button
-                      className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center"
+                      className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-base font-medium flex items-center hover:cursor-pointer"
                     >
                       {t(item.label)}
                       <svg

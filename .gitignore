@@ -16,4 +16,6 @@ dist
 # *.sln
 # *.sw?
 
+.env
+
 

@@ -36,7 +36,7 @@ const Company = () => {
           setNotFound(true);
         }
       } else {
-        const response = await API.get("/company");
+        const response = await API.get("/company/public");
         if (response.status === 200 && response.data.data) {
           setCompanies(response.data.data);
           setNotFound(false);

@@ -17,7 +17,7 @@ function Services() {
     <>
       <div className=" flex flex-col">
         <main className="flex-grow container mx-auto pb-8 px-6 pt-4">
-          <h1 className="text-4xl font-bold  mb-12 animate-fade-in ">
+          <h1 className="text-4xl font-bold  mb-12 animate-fade-in  text-center">
             {t('ourServices')}
           </h1>
 
